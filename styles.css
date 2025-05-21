@@ -1,0 +1,310 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eef2ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d6daf0;
+    padding: 1rem;
+    border-bottom: 1px solid #b7c5d9;
+}
+
+header h1 {
+    color: #800000;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #34345c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #800000;
+}
+
+nav ul li a.active {
+    color: #800000;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #b7c5d9;
+}
+
+.board-header h2 {
+    color: #34345c;
+}
+
+button {
+    background-color: #d6daf0;
+    border: 1px solid #b7c5d9;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #34345c;
+}
+
+button:hover {
+    background-color: #c0c4e0;
+}
+
+.thread-form {
+    background-color: #d6daf0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b7c5d9;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #b7c5d9;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.threads-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.thread {
+    background-color: #d6daf0;
+    padding: 1rem;
+    border: 1px solid #b7c5d9;
+    cursor: pointer;
+}
+
+.thread:hover {
+    background-color: #c0c4e0;
+}
+
+.thread-title {
+    font-weight: bold;
+    color: #34345c;
+    margin-bottom: 0.5rem;
+}
+
+.thread-meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.thread-preview {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.thread-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d6daf0;
+    border-top: 1px solid #b7c5d9;
+    margin-top: 2rem;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #eef2ff;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    border: 1px solid #b7c5d9;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.replies-container {
+    margin-top: 1rem;
+}
+
+.reply {
+    background-color: #d6daf0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b7c5d9;
+}
+
+.reply-meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.reply-form {
+    margin-top: 1rem;
+    background-color: #d6daf0;
+    padding: 1rem;
+    border: 1px solid #b7c5d9;
+}
+/* Settings Button Styles */
+.settings-container {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+#settings-btn {
+    background-color: #d6daf0;
+    border: 1px solid #b7c5d9;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.settings-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #eef2ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #b7c5d9;
+}
+
+.settings-dropdown button {
+    color: #34345c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.settings-dropdown button:hover {
+    background-color: #d6daf0;
+}
+
+.show {
+    display: block;
+}
+
+/* Modal styles for support and donation */
+.info-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.info-modal-content {
+    background-color: #eef2ff;
+    margin: 15% auto;
+    padding: 12px 16px;
+    border: 1px solid #b7c5d9;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close-info-modal {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.auth-box {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#auth-form {
+    position: absolute;
+    right: 0;
+    background: #eef2ff;
+    padding: 12px 16px;
+    border: 1px solid #b7c5d9;
+    z-index: 100;
+}
+
+#auth-form input {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 150px;
+}
+
+#auth-message {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #800000;
+}
