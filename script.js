@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sampleThreads = [
         {
             id: 1,
-            name: "Rony",
+            name: "Mohssin",
             subject: "best OS for beginners",
             comment: "i prefer to you using linux mint because it's so easy for beginners",
             timestamp: new Date().toLocaleString(),
