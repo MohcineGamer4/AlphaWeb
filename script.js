@@ -419,3 +419,19 @@ window.addEventListener('scroll', function() {
         showAd();
     }
 });
+const adTemplates = [
+    {
+        title: "Special Offer",
+        content: "Check out our new merch store!",
+        link: "#"
+    },
+    {
+        title: "Community Notice",
+        content: "Donate to keep SimpleChan running!",
+        link: "#"
+    }
+];
+
+// Then select random template when showing ad
+// Show every 5 minutes instead of 30
+if (!lastAdShown || (now - lastAdShown) > 5 * 60 * 1000)
