@@ -5,13 +5,6 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT';
 }
-@media (max-width: 600px) {
-    .ad-popup {
-        width: 90%;
-        left: 5%;
-        right: 5%;
-    }
-}
 
 body {
     background-color: #eef2ff;
