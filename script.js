@@ -300,7 +300,7 @@ donationModal.innerHTML = `
         <p>If you enjoy SimpleChan, consider supporting us!</p>
         <div class="donation-options">
             <p><strong>Bitcoin:</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
-            <p><strong>PayPal:</strong> donate@simplechan.example</p>
+            <p><strong>PayPal:</strong> paypal.me/MohcineElhala</p>
             <p><strong>Patreon:</strong> patreon.com/simplechan</p>
         </div>
         <p>Thank you for your support! ❤️</p>
