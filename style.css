@@ -375,3 +375,88 @@ footer {
     margin-top: 5px;
     color: #800000;
 }
+/* Ad Window Styles */
+.ad-window {
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: white;
+}
+
+/* Hide the ad when close link is targeted */
+.ad-window:target {
+  display: none;
+}
+
+.ad-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.ad-title {
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}
+
+.close-btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #999;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.ad-content {
+  padding: 12px;
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.ad-bio h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.ad-bio p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.ad-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #4a6bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.ad-button:hover {
+  background: #3a5bef;
+}
