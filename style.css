@@ -142,6 +142,73 @@ button:hover {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+/* Ad Popup Styles */
+.ad-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+    background-color: #d6daf0;
+    border: 1px solid #b7c5d9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ad-content {
+    padding: 15px;
+    position: relative;
+}
+
+.close-ad {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #800000;
+}
+
+.ad-header {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-label {
+    font-weight: bold;
+    color: #800000;
+}
+
+.ad-meta {
+    color: #666;
+}
+
+.ad-body {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.ad-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.ad-link:hover {
+    background-color: #600000;
+}
+
+.ad-footer {
+    font-size: 0.7rem;
+    color: #666;
+    text-align: right;
+}
 
 .thread-image {
     max-width: 100%;
