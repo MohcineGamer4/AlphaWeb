@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="password-container" id="password-container">
+        <div class="password-box">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Password">
+            <button id="submit-password">Submit</button>
+            <p><a href="https://wa.me/qr/LVX64JGXSL2RC1">get password</a></p>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <div class="protected-content" id="protected-content">
+        <h1>Welcome to the AlphaTube</h1>
+        <p>This content is only visible after entering the correct password.</p>
+        <button id="logout-btn"><a href="tube.html">Lock Content</a></button>
+    </div>
+
+    <script src="protect.js"></script>
+</body>
+</html>
