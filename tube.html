@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaTube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Alpha<span>Tube</span></div>
+        <div class="search">
+            <button><a href="index.html">home</a></button>
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ADMIN POSTS (hardcoded) -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe id="current-video" width="560" height="315" 
+                    src="src.mp4" 
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h1 id="video-title">Admin's Featured Video</h1>
+                <div class="video-meta">
+                    <span id="video-views">1,234 views</span>
+                    <span id="video-date">• Posted by Admin</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADMIN UPLOAD SECTION (visible to all but only works if you edit HTML) -->
+        <div class="owner-controls">
+            <h2>Admin Upload (Edit HTML to Add Videos)</h2>
+            <div class="admin-notice">
+                <p>To add videos as admin, edit the HTML code directly.</p>
+                <p>Example video block you can copy/paste:</p>
+                <pre>
+&lt;div class="video-container"&gt;
+    &lt;div class="video-wrapper"&gt;
+        &lt;iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+    &lt;div class="video-info"&gt;
+        &lt;h1&gt;Your Video Title&lt;/h1&gt;
+        &lt;div class="video-meta"&gt;
+            &lt;span&gt;0 views&lt;/span&gt;
+            &lt;span&gt;• Posted by Admin&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+        </div>
+
+        <!-- USER COMMENTS -->
+        <div class="comments">
+            <h2>Comments</h2>
+            <div class="comment-form">
+                <input type="text" id="comment-input" placeholder="Add a comment...">
+                <button id="comment-submit">Comment</button>
+            </div>
+            <div class="comment-list" id="comment-list">
+                <div class="comment">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <div class="comment-author">User123</div>
+                        <div class="comment-text">Great video!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="tube.js"></script>
+</body>
+</html>
