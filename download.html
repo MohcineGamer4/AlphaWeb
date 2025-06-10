@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlphaWeb - Download</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <header>
+        <div class="logo"><span>AlphaWeb - download</span></div>
+            
+        </div>
+        <nav>  
+
+            <h3><a href="index.html">home </a></h3>
+    </header>
     <style>
         :root {
-            --alpha-primary: #0066cc;
-            --alpha-secondary: #004d99;
-            --alpha-accent: #00aaff;
+            --alpha-primary: #3144aa;
+            --alpha-secondary: #3144aa;
+            --alpha-accent: #800000;
             --alpha-dark: #1a1a1a;
-            --alpha-light: #f5f5f5;
+            --alpha-light: #eef2ff;
+            --alpha-plus: #d6daf0
         }
         
         body {
-            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT';
             margin: 0;
             padding: 0;
             background-color: var(--alpha-light);
             color: var(--alpha-dark);
             line-height: 1.6;
         }
+
+      
         
         .container {
             max-width: 1000px;
@@ -29,17 +41,18 @@
         }
         
         header {
-            background-color: var(--alpha-primary);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #d6daf0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .logo {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         
         .logo span {
@@ -132,11 +145,14 @@
         }
         
         footer {
-            background-color: var(--alpha-dark);
-            color: white;
+            background-color: var(--alpha-plus);
+            color: #111111;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            padding: 0.1rem;
+            margin-top: 2rem;
+            border-top: 1px solid #b7c5d9;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .requirements {
@@ -168,13 +184,13 @@
                 <i class="fas fa-download"></i> Download APK
             </a>
             
-            <div class="requirements">
-                <h3>System Requirements</h3>
-                <p>Android 6.0 or higher | 512KB free storage</p>
-            </div>
         </section>
+         
         
     </main>
+     <footer>
+        <p>2025 AlphaWeb © - made by Mohssin Elhala</p>
+    </footer>
     
 </body>
 </html>
