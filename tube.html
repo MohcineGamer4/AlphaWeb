@@ -9,12 +9,13 @@
 </head>
 <body>
     <header>
-        <div class="logo">Alpha<span>Tube</span></div>
-        <div class="search">
-            <button><a href="index.html">home</a></button>
-            <input type="text" placeholder="Search...">
-            <button>🔍</button>
+        <div class="logo"><span>AlphaWeb - tube</span></div>
+           
         </div>
+        
+        <nav>
+            
+            <h3><a href="index.html">home</a></h3>
     </header>
 
     <main>
@@ -22,32 +23,31 @@
         <div class="video-container">
             <div class="video-wrapper">
                 <iframe id="current-video" width="1280" height="720" 
-                    src="src.mp4" 
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
                     frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-info">
-                <h1 id="video-title">You Control This Analog Horror Video</h1>
+                <h1 id="video-title">Admin's Featured Video</h1>
                 <div class="video-meta">
-                    <span id="video-views">7.4K views</span>
-                    <span id="video-date">• Posted by CodeRed</span>
+                    <span id="video-views">1,234 views</span>
+                    <span id="video-date">• Posted by Admin</span>
                 </div>
             </div>
         </div>
-        <div class="video-container">
+<div class="video-container">
     <div class="video-wrapper">
         <iframe width="1280" height="720" 
-            src="https://www.youtube.com/embed/DFzC6Wsb3ys" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
             frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="video-info">
         <h1>I Investigated Typo Website Scams</h1>
         <div class="video-meta">
-            <span>738K views</span>
-            <span>• Posted by Tranium</span>
+            <span>4,256 views</span>
+            <span>• Posted by Admin</span>
         </div>
     </div>
 </div>
-
         <!-- ADMIN UPLOAD SECTION (visible to all but only works if you edit HTML) -->
         <div class="owner-controls">
             <h2>Admin Upload (Edit HTML to Add Videos)</h2>
@@ -75,7 +75,7 @@
 
         <!-- USER COMMENTS -->
         <div class="comments">
-            <h2>Comments</h2>
+            <h2>Comments <span>beta</span></h2>
             <div class="comment-form">
                 <input type="text" id="comment-input" placeholder="Add a comment...">
                 <button id="comment-submit">Comment</button>
@@ -84,13 +84,18 @@
                 <div class="comment">
                     <div class="comment-avatar"></div>
                     <div class="comment-content">
-                        <div class="comment-author">User123</div>
+                        <div class="comment-author">Admin</div>
                         <div class="comment-text">Great video!</div>
                     </div>
                 </div>
             </div>
         </div>
+  
     </main>
+          <footer>
+        <p>2025 AlphaWeb © - made by Mohssin Elhala</p>
+    </footer>
+
 
     <script src="tube.js"></script>
 </body>
